@@ -25,7 +25,6 @@ class UserModelTest(TestCase):
             last_name='Петров',
             email='petr@example.com'
         )
-
         # Проверяем, что нельзя создать пользователя с тем же email
         with self.assertRaises(Exception):
             User.objects.create(
